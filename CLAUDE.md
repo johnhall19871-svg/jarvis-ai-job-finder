@@ -6,7 +6,7 @@ Read this file at the start of every session. It describes what this project is,
 
 **Website Builder** — a new project for building websites. The user paused work on [Company Metrics Compare](https://github.com/johnhall19871-svg/company-metrics-compare) to start this.
 
-**GitHub:** https://github.com/johnhall19871-svg/website-builder *(update if repo URL differs)*
+**GitHub:** https://github.com/johnhall19871-svg/website-builder
 
 **Local path:** `C:\Users\user\Desktop\website-builder`
 
