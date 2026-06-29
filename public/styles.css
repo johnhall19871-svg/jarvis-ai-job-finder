@@ -1,0 +1,253 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0e12;
+  --surface: #111820;
+  --surface-2: #1a2430;
+  --border: #2a3644;
+  --text: #e8edf5;
+  --muted: #8b98ab;
+  --accent: #22c55e;
+  --accent-dim: #15803d;
+  --uber: #06b6d4;
+  --warn: #fbbf24;
+  --radius: 12px;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 70% 45% at 50% -10%, rgba(34, 197, 94, 0.12), transparent),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.subtitle strong {
+  color: var(--text);
+}
+
+.notice {
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  font-size: 0.875rem;
+  color: #fde68a;
+}
+
+.notice.hidden {
+  display: none;
+}
+
+.status {
+  margin: 0 0 1.25rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.status.error {
+  color: #f87171;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 1100px) {
+  .calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .calendar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.day-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 320px;
+}
+
+.day-card.best-day {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.25);
+}
+
+.day-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.6rem;
+}
+
+.day-date {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.day-weekday {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.shift-rec {
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.shift-rec .badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.shift-rec .time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.shift-rec .area {
+  font-size: 0.85rem;
+  color: var(--uber);
+  margin-top: 0.15rem;
+}
+
+.shift-rec .meta {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.net-highlight {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.net-highlight .amount {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.net-highlight .unit {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.chart-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 72px;
+  margin-top: 0.35rem;
+}
+
+.bar {
+  flex: 1;
+  min-width: 0;
+  background: var(--accent-dim);
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  transition: background 0.15s;
+}
+
+.bar.recommended {
+  background: var(--accent);
+}
+
+.bar:hover {
+  background: #4ade80;
+}
+
+.bar[title] {
+  cursor: help;
+}
+
+.cost-breakdown {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer p {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.disclaimer {
+  font-style: italic;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarvis AI Job Finder</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <p class="eyebrow">Uber + Uber Eats · Phase 1</p>
+        <h1>Jarvis AI Job Finder</h1>
+        <p class="subtitle">
+          7-day shift planner for <strong id="home-label">DN22 0QG</strong> —
+          <span id="radius-label">35</span> mile working radius. Net £/hr after fuel, commission &amp; insurance.
+        </p>
+      </header>
+
+      <div id="notice" class="notice hidden"></div>
+      <p id="status" class="status" aria-live="polite">Loading schedule…</p>
+
+      <section id="calendar" class="calendar" aria-label="7-day shift calendar"></section>
+
+      <footer class="footer">
+        <p id="assumptions"></p>
+        <p class="disclaimer">
+          Modelled demand estimates — not live Uber pricing. For planning only, not financial advice.
+        </p>
+      </footer>
+    </div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
