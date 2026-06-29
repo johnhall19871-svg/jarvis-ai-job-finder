@@ -1,7 +1,7 @@
 {
-  "name": "website-builder",
+  "name": "jarvis-ai-job-finder",
   "version": "0.1.0",
   "private": true,
-  "description": "Website Builder project",
+  "description": "Jarvis AI Job Finder — AI-assisted job search",
   "license": "MIT"
 }

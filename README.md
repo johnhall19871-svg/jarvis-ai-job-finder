@@ -1,6 +1,6 @@
-# Website Builder
+# Jarvis AI Job Finder
 
-A new project for building websites. Requirements and tech stack are to be defined.
+An AI-assisted job search tool. Requirements and tech stack are to be defined.
 
 ## Project status
 
@@ -9,7 +9,7 @@ A new project for building websites. Requirements and tech stack are to be defin
 ## Quick start
 
 ```powershell
-cd "C:\Users\user\Desktop\website-builder"
+cd "C:\Users\user\Desktop\jarvis-ai-job-finder"
 # Commands will be added as the project takes shape
 ```
 

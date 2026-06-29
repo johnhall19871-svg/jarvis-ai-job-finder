@@ -1,14 +1,14 @@
-# Website Builder — Project Context
+# Jarvis AI Job Finder — Project Context
 
 Read this file at the start of every session. It describes what this project is, what's built, and what's planned.
 
 ## What this is
 
-**Website Builder** — a new project for building websites. The user paused work on [Company Metrics Compare](https://github.com/johnhall19871-svg/company-metrics-compare) to start this.
+**Jarvis AI Job Finder** — an AI-assisted tool to help find jobs. The user paused work on [Company Metrics Compare](https://github.com/johnhall19871-svg/company-metrics-compare) to start this project (originally scaffolded as "Website Builder", then renamed).
 
-**GitHub:** https://github.com/johnhall19871-svg/website-builder
+**GitHub:** https://github.com/johnhall19871-svg/jarvis-ai-job-finder
 
-**Local path:** `C:\Users\user\Desktop\website-builder`
+**Local path:** `C:\Users\user\Desktop\jarvis-ai-job-finder`
 
 ---
 
@@ -23,12 +23,13 @@ Read this file at the start of every session. It describes what this project is,
 
 ## Requirements (to be defined)
 
-The user has not yet specified the full vision for Website Builder. Capture and update this section when they describe:
+Capture and update this section when the user describes their vision:
 
-- What kind of websites (landing pages, multi-page sites, templates, drag-and-drop, etc.)
-- Target users (personal use, clients, no-code vs code)
-- Tech stack preferences (vanilla HTML, React, Next.js, CMS, etc.)
-- Hosting/deployment goals
+- Job sources (LinkedIn, Indeed, company sites, APIs, etc.)
+- How AI assists (matching, cover letters, resume tailoring, alerts, etc.)
+- User workflow (search filters, saved jobs, application tracking)
+- Tech stack preferences
+- Auth / accounts / data storage needs
 
 ---
 
@@ -41,7 +42,7 @@ The user has not yet specified the full vision for Website Builder. Capture and 
 ## Project layout
 
 ```
-website-builder/
+jarvis-ai-job-finder/
 ├── CLAUDE.md       ← this file (persistent AI context)
 ├── README.md       ← user-facing docs
 ├── .gitignore
@@ -64,16 +65,16 @@ Layout will grow as features are added.
 ## Git workflow
 
 ```powershell
-cd "C:\Users\user\Desktop\website-builder"
+cd "C:\Users\user\Desktop\jarvis-ai-job-finder"
 git add .
 git commit -m "Describe your change"
 git push
 ```
 
-Remote: `origin` → `https://github.com/johnhall19871-svg/website-builder.git` (branch: `master`).
+Remote: `origin` → `https://github.com/johnhall19871-svg/jarvis-ai-job-finder.git` (branch: `master`).
 
 ---
 
 ## Related project
 
-The user's previous project lives at `C:\Users\user\Desktop\claude code test` (repo: `company-metrics-compare`). Do not mix code or config between the two unless explicitly asked.
+The user's previous project lives at `C:\Users\user\Desktop\claude code test` (repo: `company-metrics-compare`). Do not mix code or config between projects unless explicitly asked.
