@@ -9,7 +9,7 @@ An AI-assisted job search tool. Requirements and tech stack are to be defined.
 ## Quick start
 
 ```powershell
-cd "C:\Users\user\Desktop\jarvis-ai-job-finder"
+cd "C:\Users\user\Desktop\website-builder"
 # Commands will be added as the project takes shape
 ```
 

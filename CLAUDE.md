@@ -8,7 +8,7 @@ Read this file at the start of every session. It describes what this project is,
 
 **GitHub:** https://github.com/johnhall19871-svg/jarvis-ai-job-finder
 
-**Local path:** `C:\Users\user\Desktop\jarvis-ai-job-finder`
+**Local path:** `C:\Users\user\Desktop\website-builder` (rename to `jarvis-ai-job-finder` when the folder isn't in use — close Cursor or rename manually in File Explorer)
 
 ---
 
@@ -65,7 +65,7 @@ Layout will grow as features are added.
 ## Git workflow
 
 ```powershell
-cd "C:\Users\user\Desktop\jarvis-ai-job-finder"
+cd "C:\Users\user\Desktop\website-builder"
 git add .
 git commit -m "Describe your change"
 git push
